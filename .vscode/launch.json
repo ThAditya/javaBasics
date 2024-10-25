@@ -1,0 +1,34 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "ProbThirtyFour",
+            "request": "launch",
+            "mainClass": "ProbThirtyFour",
+            "projectName": "javaBasics_d19ecd17"
+        },
+        {
+            "type": "java",
+            "name": "leetcodeProbThirtyfour",
+            "request": "launch",
+            "mainClass": "leetcodeProbThirtyfour",
+            "projectName": "javaBasics_d19ecd17"
+        },
+        {
+            "type": "java",
+            "name": "DiamondPattern",
+            "request": "launch",
+            "mainClass": "DiamondPattern",
+            "projectName": "javaBasics_d19ecd17"
+        },
+        {
+            "type": "jdk",
+            "request": "launch",
+            "name": "Launch Java App"
+        }
+    ]
+}
