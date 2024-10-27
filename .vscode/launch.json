@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "GFGProbOne",
+            "request": "launch",
+            "mainClass": "GFGProbOne",
+            "projectName": "javaBasics_d19ecd17"
+        },
+        {
+            "type": "java",
             "name": "ProbOneEightNine",
             "request": "launch",
             "mainClass": "ProbOneEightNine",
