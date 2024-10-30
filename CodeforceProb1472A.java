@@ -1,7 +1,7 @@
 
 import java.util.*;
 
-public class Problem1472A {
+public class CodeforceProb1472A {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

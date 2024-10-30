@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Problem1472A",
+            "request": "launch",
+            "mainClass": "Problem1472A",
+            "projectName": "javaBasics_d19ecd17"
+        },
+        {
+            "type": "java",
             "name": "CodeforceProb1855A",
             "request": "launch",
             "mainClass": "CodeforceProb1855A",
