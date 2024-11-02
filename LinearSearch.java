@@ -3,12 +3,12 @@ import java.util.Scanner;
 
 public class LinearSearch {
 
-    public static int LinearSearching(int arr1[], int key) {
+    public static int LinearSearching(String arr1[], int key) {
         if (key == 0) {
             return -1;
         }
         for (int i = 0; i < arr1.length; i++) {
-            if (arr1[i] == key) {
+            if (arr1[i].equals(key)) {
                 return i;
             }
         }
@@ -20,10 +20,14 @@ public class LinearSearch {
         System.out.println("length: ");
         int n = sc.nextInt();
         System.out.println("Elements: ");
-        int arr1[] = new int[n];
+        // int arr1[] = new int[n];
+        String arr1[] = new String[n];
 
+        // for (int i = 0; i < n; i++) {
+        //     arr1[i] = sc.nextInt();
+        // }
         for (int i = 0; i < n; i++) {
-            arr1[i] = sc.nextInt();
+            arr1[i] = sc.next();
         }
 
         System.out.println("key value: ");
