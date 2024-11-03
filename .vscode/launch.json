@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "RiverseAnArray",
+            "request": "launch",
+            "mainClass": "RiverseAnArray",
+            "projectName": "javaBasics_d19ecd17"
+        },
+        {
+            "type": "java",
             "name": "BinarySearch",
             "request": "launch",
             "mainClass": "BinarySearch",
