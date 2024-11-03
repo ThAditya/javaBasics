@@ -3,20 +3,22 @@ import java.util.Scanner;
 
 public class BinarySearch {
 
-    public static void Searching(int arr1[], int key) {
+    public static int Searching(int arr1[], int key) {
         int start = 0;
         int end = arr1.length - 1;
 
         while (start <= end) {
             int mid = (start + end) / 2;
             if (arr1[mid] == key) {
-                System.out.println("Element is present at index " + mid);
+                return mid;
             } else if (arr1[mid] < key) {
                 start = mid + 1;
             } else {
                 end = mid - 1;
             }
+
         }
+        return -1;
     }
 
     public static void main(String[] args) {
@@ -33,6 +35,6 @@ public class BinarySearch {
         System.out.println("key value: ");
         int key = sc.nextInt();
 
-        Searching(arr1, key);
+        System.out.println("index for key is: " + Searching(arr1, key));
     }
 }
