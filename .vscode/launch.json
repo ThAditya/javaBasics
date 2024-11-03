@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "BinarySearch",
+            "request": "launch",
+            "mainClass": "BinarySearch",
+            "projectName": "javaBasics_d19ecd17"
+        },
+        {
+            "type": "java",
             "name": "LargestNumber",
             "request": "launch",
             "mainClass": "LargestNumber",
