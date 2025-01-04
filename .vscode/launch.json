@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "pairsInArray",
+            "request": "launch",
+            "mainClass": "pairsInArray",
+            "projectName": "javaBasics_d4becd47"
+        },
+        {
+            "type": "java",
+            "name": "BinarySearch",
+            "request": "launch",
+            "mainClass": "BinarySearch",
+            "projectName": "javaBasics_d4becd47"
+        },
+        {
+            "type": "java",
+            "name": "BinaryTriangle",
+            "request": "launch",
+            "mainClass": "BinaryTriangle",
+            "projectName": "javaBasics_d4becd47"
+        },
+        {
+            "type": "java",
             "name": "RiverseAnArray",
             "request": "launch",
             "mainClass": "RiverseAnArray",
