@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SubArrays",
+            "request": "launch",
+            "mainClass": "SubArrays",
+            "projectName": "javaBasics_d4becd47"
+        },
+        {
+            "type": "java",
             "name": "pairsInArray",
             "request": "launch",
             "mainClass": "pairsInArray",
