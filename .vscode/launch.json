@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "containDuplicate",
+            "request": "launch",
+            "mainClass": "DSA_ApnaCollege_question_list.containDuplicate",
+            "projectName": "javaBasics_d4becd47"
+        },
+        {
+            "type": "java",
+            "name": "MaxSumArray",
+            "request": "launch",
+            "mainClass": "DSA_ApnaCollege_question_list.MaxSumArray",
+            "projectName": "javaBasics_d4becd47"
+        },
+        {
+            "type": "java",
+            "name": "PreffixMaxSumArray",
+            "request": "launch",
+            "mainClass": "DSA_ApnaCollege_question_list.PreffixMaxSumArray",
+            "projectName": "javaBasics_d4becd47"
+        },
+        {
+            "type": "java",
             "name": "SubArrays",
             "request": "launch",
             "mainClass": "SubArrays",

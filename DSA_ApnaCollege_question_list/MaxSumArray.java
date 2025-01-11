@@ -12,8 +12,8 @@ public class MaxSumArray {
                     sum = sum + arr[k];
                 } 
                 if(max<sum) max = sum;   
-                sum = 0;
             }
+            sum = 0;
         }
         return max;
 
