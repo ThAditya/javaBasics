@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "kadanesAlgo",
+            "request": "launch",
+            "mainClass": "kadanesAlgo",
+            "projectName": "javaBasics_d4becd47"
+        },
+        {
+            "type": "java",
+            "name": "chocolateDistribution",
+            "request": "launch",
+            "mainClass": "DSA_ApnaCollege_question_list.chocolateDistribution",
+            "projectName": "javaBasics_d4becd47"
+        },
+        {
+            "type": "java",
             "name": "containDuplicate",
             "request": "launch",
             "mainClass": "DSA_ApnaCollege_question_list.containDuplicate",
