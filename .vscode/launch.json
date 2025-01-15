@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "trappedRainwater",
+            "request": "launch",
+            "mainClass": "trappedRainwater",
+            "projectName": "javaBasics_d4becd47"
+        },
+        {
+            "type": "java",
             "name": "kadanesAlgo",
             "request": "launch",
             "mainClass": "kadanesAlgo",
