@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "BuyAndSellStock",
+            "request": "launch",
+            "mainClass": "BuyAndSellStock",
+            "projectName": "javaBasics_d4becd47"
+        },
+        {
+            "type": "java",
+            "name": "BuyAnsSellStock",
+            "request": "launch",
+            "mainClass": "BuyAnsSellStock",
+            "projectName": "javaBasics_d4becd47"
+        },
+        {
+            "type": "java",
             "name": "trappedRainwater",
             "request": "launch",
             "mainClass": "trappedRainwater",
