@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "BubbleSort",
+            "request": "launch",
+            "mainClass": "Sorting.BubbleSort",
+            "projectName": "javaBasics_d4becd47"
+        },
+        {
+            "type": "java",
+            "name": "tripletSum",
+            "request": "launch",
+            "mainClass": "tripletSum",
+            "projectName": "javaBasics_d4becd47"
+        },
+        {
+            "type": "java",
             "name": "containsDuplicate",
             "request": "launch",
             "mainClass": "containsDuplicate",
