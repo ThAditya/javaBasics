@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "containsDuplicate",
+            "request": "launch",
+            "mainClass": "containsDuplicate",
+            "projectName": "javaBasics_d4becd47"
+        },
+        {
+            "type": "java",
             "name": "BuyAndSellStock",
             "request": "launch",
             "mainClass": "BuyAndSellStock",

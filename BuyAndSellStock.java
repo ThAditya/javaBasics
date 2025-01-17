@@ -5,20 +5,22 @@ public class BuyAndSellStock {
     public static int printStock(int[] arr){
 
         int buyStock = Integer.MAX_VALUE;
-        int max = 0;
+        int max =0 , profit = 0;
+        
 
         // loop for finding the maximum profit from each day
         for(int i=0;i<arr.length;i++){
             // if the buyStock is lower than the current price, subtract the buyStock from the current price
             if(buyStock < arr[i]) {
-                int profit = arr[i] - buyStock;
+                profit = arr[i] - buyStock;
                 max = Math.max(max, profit);
                  
-            }else{
+            }
+            else{
                 buyStock = arr[i]; // if the stock price is lower than the buyStock, update the buyStock
             }
-
         }
+        if(profit < 0) return 0;
 
         return  max;
     }
