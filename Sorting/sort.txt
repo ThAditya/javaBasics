@@ -1,0 +1,20 @@
+Inbuilt sort := 
+
+for sorting in ascending order
+
+import java.util.Arrays;
+Arrays.sort(arr);
+O(nlogn)
+
+Arrays.sort(arr, startingIndex, endingIndex);
+e.g:. Arrays.sort(arr, 1, 3);
+
+for sorting in descending order
+
+import java.util.collections;
+reverseOrder() function work on objectives,
+     instead of using int keyword which we have to use Integer
+Arrays.sort(arr, collections.reverseOrder());
+
+Arrays.sort(arr, startingIndex, endingIndex, collections.reverseOrder());
+
