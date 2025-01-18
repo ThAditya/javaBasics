@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "countingSort",
+            "request": "launch",
+            "mainClass": "Sorting.countingSort",
+            "projectName": "javaBasics_d4becd47"
+        },
+        {
+            "type": "java",
             "name": "insertionSort",
             "request": "launch",
             "mainClass": "Sorting.insertionSort",
