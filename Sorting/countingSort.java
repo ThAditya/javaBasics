@@ -1,7 +1,7 @@
 package Sorting;
 
 import java.util.Scanner;
-
+  
 public class countingSort {
 
     public static void printCountingSort(int[] arr){
