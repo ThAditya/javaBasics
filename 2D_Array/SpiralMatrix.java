@@ -3,8 +3,29 @@ import java.util.Scanner;
 public class SpiralMatrix {
 
     public static void spiralMatrix(int[][] arr){
-        int startRow =0, endRow = arr.length-1;
-        int startCol =0, endCol = arr.length-1;
+        int sRow =0, endRow = arr.length-1;
+        int sCol =0, endCol = arr.length-1;
+
+        //top
+
+        for(int i=sCol;i<endCol;i++){
+            System.out.println(arr[sRow][i]);
+        }
+
+        //right
+        for(int i=sRow+1;i<endRow;i++){
+            System.out.println(arr[i][endCol]);
+        }
+
+        //bottom
+        for(int i=endCol-1 ;i>=sCol;i--){
+            System.out.println(arr[endRow][i]);
+        }
+
+        // left
+        for(int i=sCol;i<endCol;i++){
+            System.out.println(arr[sRow][i]);
+        }
         
     }
     public static void main(String[] args) {
