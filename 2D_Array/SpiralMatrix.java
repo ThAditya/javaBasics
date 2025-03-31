@@ -3,37 +3,46 @@ import java.util.Scanner;
 public class SpiralMatrix {
 
     public static void spiralMatrix(int[][] arr){
-        int sRow =0, endRow = arr.length-1;
-        int sCol =0, endCol = arr.length-1;
+        int startRow = 0, EndRow = arr.length-1;
+        int startCol = 0, EndCol = arr.length-1;
 
-        //top
+        while(startRow <= EndRow && startCol <= EndCol){
+            //top
+            for(int j=startCol;j<=EndCol;j++){
+                System.out.print(arr[startRow][j] + " ");
+            }
 
-        for(int i=sCol;i<endCol;i++){
-            System.out.println(arr[sRow][i]);
+            // right
+            for(int i=startRow+1;i<=EndRow;i++){
+                System.out.print(arr[i][EndCol]+" ");
+            }
+
+            //bottom
+            for(int j=EndCol-1;j>=startCol;j--){
+                if(startRow == EndRow) break;
+                System.out.print(arr[EndRow][j]+" ");
+            }
+
+            //left
+            for(int i=EndRow-1;i>startRow;i--){
+                if(startCol==EndCol) break;
+                System.out.print(arr[i][startCol] + " ");
+            }
+
+            startCol++;
+            startRow++;
+            EndCol--;
+            EndRow--;
         }
 
-        //right
-        for(int i=sRow+1;i<endRow;i++){
-            System.out.println(arr[i][endCol]);
-        }
-
-        //bottom
-        for(int i=endCol-1 ;i>=sCol;i--){
-            System.out.println(arr[endRow][i]);
-        }
-
-        // left
-        for(int i=sCol;i<endCol;i++){
-            System.out.println(arr[sRow][i]);
-        }
-        
+        System.out.println();
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Length of row: ");
-        int n = sc..nextInt();
+        int n = sc.nextInt();
         System.out.println("Length of column: ");
-        int m = sc..nextInt();
+        int m = sc.nextInt();
 
         System.out.println("Elements of Array: ");
         int arr[][] = new int[n][m];

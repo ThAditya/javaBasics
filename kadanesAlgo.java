@@ -3,16 +3,25 @@ import java.util.Scanner;
 public class kadanesAlgo {
 
     public static int printMax(int arr[]){
-        int max = Integer.MIN_VALUE;
-        int sum = 0;
-        for (int i = 0; i < arr.length; i++) {
-            sum = sum + arr[i];
+        int maxSum = Integer.MIN_VALUE;
+        int currSum = 0;
+        // for(int i=0;i<arr.length;i++){
+        //     currSum = currSum + arr[i];
+        //     if(currSum < 0){
+        //         currSum = 0;
+        //     }
+        //     maxSum = Math.max(currSum, maxSum);
+        // }
+        // return maxSum;
 
-            if(sum < 0) sum = 0;
-            max = Math.max(sum, max);
 
+        //For taking minimum value from all negative input numbers
+
+        for(int i=0;i<arr.length;i++){
+            currSum = currSum + arr[i];
+            maxSum = Math.max(currSum, maxSum);
         }
-        return max;
+        return maxSum;
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
