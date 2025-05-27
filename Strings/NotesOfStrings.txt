@@ -1,0 +1,19 @@
+String are Immutable means Strings never change in java, for any change we have to make new Strings.
+
+Different types of storing Strings
+1. String str = "abcd";
+2. String str = new String("abcd");
+
+sc.next():- Only taking one word at a time, 
+if we want to take multiple words then we have to use sc.nextLine().
+sc.nextLine();
+
+name.length() function is used to find the length of String
+
+Concatenation in java:- it means adding two strings together.
+String s1 = "Hello";
+String s2 = "World";
+String s3 = s1 + s2;
+
+
+.charAt function used to get the character at the specified index in the string.
