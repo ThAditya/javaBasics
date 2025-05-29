@@ -17,3 +17,39 @@ String s3 = s1 + s2;
 
 
 .charAt function used to get the character at the specified index in the string.
+    ex :- String s = "Hello";
+        char c = s.charAt(0);
+
+".equals()" is used to check if the strings are equal or not.
+    ex. name.equals(name)
+
+
+.substring() function is used to get the substring of the string.
+    ex.  name.substring(startingIndex, endingIndex)  :-  name.substring(1, 3);
+
+
+.campareTo() function is used to compare the strings.
+    ex :- name.compareTo(name2);
+
+.campareToIgnoreCase() function is used to compare the strings ignoring the case.
+    ex :- name.compareToIgnoreCase(name2);
+    ex :- String fruit[] = {"apple", "banana", "cherry"};
+        String fruit1 = fruit[0];
+        for(int i=0;i<fruit.length;i++){
+            if(fruit1.compareTo(fruit[i]) < 0){
+                fruit1 = fruit[i];
+            }
+        }
+
+StringBuilder is use when we have to perform many string operations like insert, delete, replace etc. because string is immutable in java.
+.append() function is used to add the string at the end of the string.
+ex :- StringBuilder sb = new StringBuilder("");
+    for(char ch = 'a';ch<='z;ch++){
+        sb.append(ch);
+    }
+
+.toString() function is used to convert the object into string.
+ex:- character s = "Hello";
+String s1 = s.toString();
+
+.toUppercase() function is used to convert the string into upper case.
