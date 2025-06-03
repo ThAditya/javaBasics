@@ -53,3 +53,5 @@ ex:- character s = "Hello";
 String s1 = s.toString();
 
 .toUppercase() function is used to convert the string into upper case.
+ex:- String s = "Hello";
+String s1 = s.toUpperCase();
