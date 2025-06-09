@@ -1,0 +1,5 @@
+Operations in BitManipulation
+Bit manipulation is a set of operations that can be performed on the binary representation of a number.
+ These operations are used to extract, set, and manipulate individual bits within a binary number.
+
+ Git ith Bit :- 
