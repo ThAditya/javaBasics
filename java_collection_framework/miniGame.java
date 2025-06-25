@@ -1,4 +1,4 @@
-package java collection framework;
+package java_collection_framework;
 
 class car{
     String carName;
@@ -39,7 +39,7 @@ class car{
 public class miniGame {
     public static void main(String[] args) {
         car vehicle = new car("Scorpio", "s11", "Black", 45, true, true, false);
-        vehicle.carname = "Fortuner";
+        vehicle.carName = "Fortuner";
         vehicle.model = "legender";
         vehicle.color = "white";
 

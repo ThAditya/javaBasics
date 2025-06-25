@@ -1,7 +1,4 @@
 package linkedList;
-
-import java.util.Scanner;
-
 class Node{
     char data;
     Node add;
