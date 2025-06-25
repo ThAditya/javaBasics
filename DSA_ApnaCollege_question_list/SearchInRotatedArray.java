@@ -1,3 +1,5 @@
+package DSA_ApnaCollege_question_list;
+
 import java.util.Scanner;
 
 public class SearchInRotatedArray {
