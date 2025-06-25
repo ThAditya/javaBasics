@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "linkedList2",
+            "request": "launch",
+            "mainClass": "linkedList.linkedList2",
+            "projectName": "javaBasics_9f60268a"
+        },
+        {
+            "type": "java",
+            "name": "linkedList1",
+            "request": "launch",
+            "mainClass": "linkedList.linkedList1",
+            "projectName": "javaBasics_9f60268a"
+        },
+        {
+            "type": "java",
             "name": "countingSort",
             "request": "launch",
             "mainClass": "Sorting.countingSort",
