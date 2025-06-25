@@ -1,7 +1,5 @@
 package linkedList;
 
-import java.util.LinkedList;
-
 public class linkedList2 {
     
     class Node{
