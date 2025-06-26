@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "chocalateDistribution",
+            "request": "launch",
+            "mainClass": "Array.chocalateDistribution",
+            "projectName": "javaBasics_9f60268a"
+        },
+        {
+            "type": "java",
             "name": "linkedList2",
             "request": "launch",
             "mainClass": "linkedList.linkedList2",
