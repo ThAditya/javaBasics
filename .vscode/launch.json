@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "iterativeSearch",
+            "request": "launch",
+            "mainClass": "linkedList.iterativeSearch",
+            "projectName": "javaBasics_9f60268a"
+        },
+        {
+            "type": "java",
             "name": "chocalateDistribution",
             "request": "launch",
             "mainClass": "Array.chocalateDistribution",
