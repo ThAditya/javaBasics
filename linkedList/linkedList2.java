@@ -59,6 +59,46 @@ public class linkedList2 {
         temp.next = newNode;
     }
 
+    public int deleteFirst(){
+        if(size == 0){
+            System.out.println("list is empty");
+            return Integer.MIN_VALUE;
+        }else if(size == 1){
+            int val = head.data;
+            head = tail = null;
+            size = 0;
+            return val;
+        }
+        int val = head.data;
+        head = head.next;
+        size--;
+        return val;
+
+    }
+
+    public int deleteLast(){
+        if(size == 0){
+            System.out.println("List is Empty");
+            return Integer.MIN_VALUE;
+        }else if(size == 1){
+            int val = tail.data;
+            head = tail = null;
+            size = 0;
+            return val;
+        }
+
+        Node prev = head;
+        for (int i = 0; i < size-2; i++) {
+            prev= prev.next;
+        }
+
+        int val = prev.next.data;
+        prev.next = null;
+        tail = prev;
+        size--;
+        return val;
+    }
+
     public void printList(){
         
         if(head == null){
@@ -79,10 +119,18 @@ public class linkedList2 {
         list.addFirst(13);
         list.addFirst(12);
         list.addFirst(11);
+        
         list.addLast(14);
         list.addLast(15);
         list.addLast(16);
+        
         list.addInMiddle(17, 6);
+        list.printList();
+
+        list.deleteFirst();
+        list.printList();
+        
+        list.deleteLast();
         list.printList();
 
         System.out.println(list.size);
