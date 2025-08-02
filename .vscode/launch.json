@@ -6,6 +6,69 @@
     "configurations": [
         {
             "type": "java",
+            "name": "hybridInheritance",
+            "request": "launch",
+            "mainClass": "oops.hybridInheritance",
+            "projectName": "javaBasics_9f60268a"
+        },
+        {
+            "type": "java",
+            "name": "kadanesAlgo",
+            "request": "launch",
+            "mainClass": "kadanesAlgo",
+            "projectName": "javaBasics_9f60268a"
+        },
+        {
+            "type": "java",
+            "name": "MaxSubArraySumI",
+            "request": "launch",
+            "mainClass": "MaxSubArraySumI",
+            "projectName": "javaBasics_9f60268a"
+        },
+        {
+            "type": "java",
+            "name": "trappedRainwater",
+            "request": "launch",
+            "mainClass": "trappedRainwater",
+            "projectName": "javaBasics_9f60268a"
+        },
+        {
+            "type": "java",
+            "name": "SubArrays",
+            "request": "launch",
+            "mainClass": "SubArrays",
+            "projectName": "javaBasics_9f60268a"
+        },
+        {
+            "type": "java",
+            "name": "subarrays",
+            "request": "launch",
+            "mainClass": "infosysTest.subarrays",
+            "projectName": "javaBasics_9f60268a"
+        },
+        {
+            "type": "java",
+            "name": "IterativeSearch",
+            "request": "launch",
+            "mainClass": "linkedList.IterativeSearch",
+            "projectName": "javaBasics_9f60268a"
+        },
+        {
+            "type": "java",
+            "name": "DeleteAtPosition",
+            "request": "launch",
+            "mainClass": "linkedList.DeleteAtPosition",
+            "projectName": "javaBasics_9f60268a"
+        },
+        {
+            "type": "java",
+            "name": "BalanceTheArray",
+            "request": "launch",
+            "mainClass": "BalanceTheArray",
+            "projectName": "javaBasics_9f60268a"
+        },
+        {
+            "type": "java",
             "name": "iterativeSearch",
             "request": "launch",
             "mainClass": "linkedList.iterativeSearch",

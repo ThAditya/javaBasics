@@ -1,6 +1,6 @@
 package linkedList;
 
-public class iterativeSearch {
+public class IterativeSearch {
 
     class Node {
         int data;
@@ -12,13 +12,13 @@ public class iterativeSearch {
         }
     }
 
-    public static Node head;
-    public static Node tail;
+    public Node head;
+    public Node tail;
 
-    public void addFirst(int data){
+    public void addFirst(int data) {
         Node newNode = new Node(data);
 
-        if(head == null){
+        if (head == null) {
             head = tail = newNode;
             return;
         }
@@ -26,10 +26,10 @@ public class iterativeSearch {
         head = newNode;
     }
 
-    public void addLast(int data){
+    public void addLast(int data) {
         Node newNode = new Node(data);
 
-        if(head == null){
+        if (head == null) {
             head = tail = newNode;
             return;
         }
@@ -37,23 +37,33 @@ public class iterativeSearch {
         tail = newNode;
     }
 
-    public void addInMiddle(int data, int idx){
-        if(head == null){
+    public void addInMiddle(int data, int idx) {
+        if (idx == 0) {
             addFirst(data);
             return;
         }
+        
         Node newNode = new Node(data);
-        int i=0;
+        Node temp = head;
+        int i = 0;
 
-        while (i < idx-1) {
-            head = head.next;
+        while (temp != null && i < idx - 1) {
+            temp = temp.next;
             i++;
         }
-        newNode.next = head.next;
-        head.next = newNode;
+        
+        if (temp == null) { // If index is out of bounds, add at the end
+            addLast(data);
+        } else {
+            newNode.next = temp.next;
+            temp.next = newNode;
+            if (temp == tail) {
+                tail = newNode;
+            }
+        }
     }
 
-    public static int itertive(int key) {
+    public int iterativeSearch(int key) {
         Node temp = head;
         int idx = 0;
         while (temp != null) {
@@ -66,27 +76,28 @@ public class iterativeSearch {
         return -1;
     }
 
-    public void printList(){
-        if(head == null){
+    public void printList() {
+        if (head == null) {
             System.out.println("List is empty");
             return;
         }
 
-        while(head != null){
-            System.out.print(head.data + "->");
-            head = head.next;
+        Node temp = head;
+        while (temp != null) {
+            System.out.print(temp.data + "->");
+            temp = temp.next;
         }
         System.out.println("null");
     }
 
     public static void main(String[] args) {
-        iterativeSearch list = new iterativeSearch();
+        IterativeSearch list = new IterativeSearch();
         list.addFirst(15);
         list.addFirst(14);
         list.addLast(17);
         list.addLast(18);
-        list.addInMiddle(16, 3);
-
+        list.addInMiddle(16, 2); // Changed index to 2 to properly insert between 15 and 17
         list.printList();
+        System.out.println(list.iterativeSearch(17));
     }
 }
