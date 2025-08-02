@@ -11,7 +11,7 @@ public class subarrays {
             sum += arr[i];
             for(int j=i+2;j<n;j++){
                 sum += arr[j];
-                for(in t k=i;k<=j;k++){
+                for(int k=i;k<=j;k++){
                 }
                 System.out.println(sum);
             }
