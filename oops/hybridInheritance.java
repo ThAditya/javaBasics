@@ -33,8 +33,8 @@ class tunna extends fish {
 }
 
 class shark extends fish {
-    void homnivorus() {
-        System.out.println("Hornivorous");
+    void Hervivore() {
+        System.out.println("Hervivore");
     }
 }
 

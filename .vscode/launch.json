@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Abstractions",
+            "request": "launch",
+            "mainClass": "oops.Abstractions",
+            "projectName": "javaBasics_9f60268a"
+        },
+        {
+            "type": "java",
             "name": "hybridInheritance",
             "request": "launch",
             "mainClass": "oops.hybridInheritance",
