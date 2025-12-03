@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "decreaseNum",
+            "request": "launch",
+            "mainClass": "Recursion.decreaseNum",
+            "projectName": "javaBasics_9f60268a"
+        },
+        {
+            "type": "java",
+            "name": "kthLargestElement",
+            "request": "launch",
+            "mainClass": "kthLargestElement",
+            "projectName": "javaBasics_9f60268a"
+        },
+        {
+            "type": "java",
+            "name": "Divisibility_Problem",
+            "request": "launch",
+            "mainClass": "codeforceQuestions.Divisibility_Problem",
+            "projectName": "javaBasics_9f60268a"
+        },
+        {
+            "type": "java",
+            "name": "mm",
+            "request": "launch",
+            "mainClass": "vansh_solved_a_question_of_hard_level.mm",
+            "projectName": "javaBasics_9f60268a"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "javaBasics_9f60268a"
+        },
+        {
+            "type": "java",
             "name": "Abstractions",
             "request": "launch",
             "mainClass": "oops.Abstractions",
