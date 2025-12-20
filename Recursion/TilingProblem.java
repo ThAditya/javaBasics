@@ -1,0 +1,23 @@
+package Recursion;
+
+import java.util.Scanner;
+
+public class TilingProblem {
+    public static int TilingWays(int n){
+        if(n == 0 || n == 1){
+            return 1;
+        }
+        // for vertical ways
+        int fnm1 = TilingWays(n-1);
+        // for horizontal ways
+        int fnm2 = TilingWays(n-2);
+
+        return fnm1 + fnm2;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        System.out.println(TilingWays(n));
+    }
+}
