@@ -10,10 +10,10 @@ public class DuplicateString {
             return;
         }
         char currChar = str.charAt(i);
-        if(map[currChar - 'a'] == true){
+        if(map[currChar-'a'] == true){
             removeDuplicate(str, i+1, newStr, map);
         }else{
-            map[currChar- 'a'] = true;
+            map[currChar-'a'] = true;
             removeDuplicate(str, i+1, newStr.append(currChar), map);
         }
     }
