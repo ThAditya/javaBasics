@@ -7,12 +7,12 @@ public class TilingProblem {
         if(n == 0 || n == 1){
             return 1;
         }
-        // for vertical ways
-        int fnm1 = TilingWays(n-1);
-        // for horizontal ways
-        int fnm2 = TilingWays(n-2);
+        // // for vertical ways
+        // int fnm1 = TilingWays(n-1);
+        // // for horizontal ways
+        // int fnm2 = TilingWays(n-2);
 
-        return fnm1 + fnm2;
+        return TilingWays(n-1) + TilingWays(n-2);
     }
 
     public static void main(String[] args) {
