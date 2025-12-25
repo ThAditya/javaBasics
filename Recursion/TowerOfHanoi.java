@@ -9,6 +9,8 @@ public class TowerOfHanoi {
             System.out.println("transfer disk" + n + "from"+ src + "to" + des);
             return;
         }
+        // start to  helper and then destination
+        
         countWays(n-1, src, des, help);
         System.out.println("transfer disk" + n + "from"+ src + "to" + des);
         countWays(n-1, help, src, des);
