@@ -32,11 +32,12 @@ public class mergeSort {
         while(i <= mid && j <= ei){
             if(arr[i]<arr[j]){
                 temp[k] = arr[i];
-                i++;k++;
+                i++;
             }else{
                 temp[k] = arr[j];
-                j++;k++;
+                j++;
             }
+            k++;
         }
 
         // for left
