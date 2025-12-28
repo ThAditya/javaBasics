@@ -24,6 +24,7 @@ public class MajurityCount {
 
     // }
     
+    // // // // // for time complexity O(n*logn);
 
     // count the element which are coming from left or right side for finding majority of any element
     private static int countMajorEle(int arr[], int num, int si, int ei){
