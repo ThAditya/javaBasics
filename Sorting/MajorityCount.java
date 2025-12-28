@@ -29,7 +29,7 @@ public class MajurityCount {
     // count the element which are coming from left or right side for finding majority of any element
     private static int countMajorEle(int arr[], int num, int si, int ei){
         int count = 0;
-        for(int i = si; i < ei;i++){
+        for(int i = si; i <= ei;i++){
             if(arr[i] == num){
                 count++;
             }
@@ -43,11 +43,11 @@ public class MajurityCount {
     private static int majorityElementRec(int arr[], int si, int ei){
         // if size = 1 then si is number
         if(si == ei){
-            return si;
+            return arr[si];
         }
 
         // find medium 
-        int mid = (si + ei)/2;
+        int mid = si+(ei- si)/2;
 
         // check from left side from si to mid
         int left = majorityElementRec(arr, si, mid);
