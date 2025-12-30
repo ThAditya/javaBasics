@@ -2,7 +2,7 @@ package Sorting;
 
 import java.util.Scanner;
 
-public class MajurityCount {
+public class MajorityCount {
 
     // // // // // Brute force approch containing time complexity O(n^2)
 
