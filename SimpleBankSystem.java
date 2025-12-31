@@ -2,34 +2,35 @@ import java.util.Arrays;
 import java.util.Scanner;
 class Bank {
 
-private long[] balance;
+    private long[] balance;
 
-public Bank(long[] balance){
-    this.balance = balance;
-}
+    public Bank(long[] balance){
+        this.balance = balance;
+    }
 
-public static boolean transfer(int account1, int account2, long money){
+    public boolean transfer(int account1, int account2, long money){
         if(account1 < 1 || account1 > balance.length) return false;
         if(account2 < 1 || account2 > balance.length) return false;
 
-        if(account1[balance - 1] < money) return false;
+        if(balance[account1 - 1] < money) return false;
         
-        account1[balance - 1] -= money;
-        account2[balance - 2] += money;
+        balance[account1 - 1] -= money;
+        balance[account2 - 2] += money;
+        return true;
     }
 
-    public static boolean withdraw(int account, long money){
+    public boolean withdraw(int account, long money){
         if(account < 1 || account > balance.length) return false;
-        if(account[balance - 1] < money) return false;
+        if(balance[account - 1] < money) return false;
         
-        account[balance - 1] -= money;
+        balance[account - 1] -= money;
         return true;
     }
     
-    public static boolean deposit(int account, int money){
+    public boolean deposit(int account, long money){
         if(account < 1 || account > balance.length) return false;
         
-        account[balance - 1] += money;
+        balance[account - 1] += money;
         return true;
         
     }
@@ -43,7 +44,7 @@ public class SimpleBankSystem {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        Long[] balances = new Long[n];
+        long[] balances = new long[n];
         for(int i=0; i<n;i++){
             balances[i] = sc.nextLong();
         }
