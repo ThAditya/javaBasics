@@ -77,6 +77,5 @@ public class SimpleBankSystem {
                 System.out.println("Invalid Input");
             }
         }
-        
     }
 }
