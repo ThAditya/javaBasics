@@ -7,8 +7,8 @@ public class ShuffleTheArray {
 
     public static int[] shuffled(int[] arr, int n){
         int temp[] = new int[arr.length];
-        int j = m;
-        for (int i = 0; i < m; i++) {
+        int j = n;
+        for (int i = 0; i < n; i++) {
             temp[2*i] = arr[i];
             temp[2*i-1] = arr[j];
             j++;
@@ -24,7 +24,7 @@ public class ShuffleTheArray {
             arr[i] = sc.nextInt();
         }
         // int m = sc.nextInt();
-        int res = shuffled(arr, n);
+        int[] res = shuffled(arr, n);
         System.out.println(Arrays.toString(res));
     }
 }
