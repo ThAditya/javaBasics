@@ -10,7 +10,7 @@ public class ShuffleTheArray {
         int j = n;
         for (int i = 0; i < n; i++) {
             temp[2*i] = arr[i];
-            temp[2*i-1] = arr[j];
+            temp[2*i+1] = arr[j];
             j++;
         }
         return temp;
