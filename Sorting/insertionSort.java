@@ -1,26 +1,24 @@
 package Sorting;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class insertionSort {
 
-    public static void printInsertionArray(int[] arr){
+    public static int[] printInsertionArray(int[] arr){
         for(int i=1;i<arr.length;i++){
             int currEle = arr[i];
-           int prevEle = i-1;
+            int prevEle = i-1;
 
-           while(prevEle >= 0 && arr[prevEle] > currEle){
+            while(prevEle >= 0 && arr[prevEle] > currEle){
                 arr[prevEle + 1] = arr[prevEle];
                 prevEle--;
-           }
+            }
 
-           arr[prevEle + 1] = currEle;
+            arr[prevEle + 1] = currEle;
         }
 
-        for(int i=0;i<arr.length;i++){
-            System.out.print(+arr[i] + " ");
-        }
-        System.out.println();
+        return arr;
     }
 
     public static void main(String[] args) {
@@ -33,6 +31,7 @@ public class insertionSort {
             arr[i] = sc.nextInt();
         }
 
-        printInsertionArray(arr);
+        int res[] = printInsertionArray(arr);
+        System.out.println(Arrays.toString(res));
     }
 }
